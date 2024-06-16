@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 100vh;
+}
+
+.left-photo-logo {
+    width: 40vw;
+    height: 100vh;
+    object-fit: contain;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-part {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header-text {
+    display: flex;
+    height: 35vh;
+    align-items: end;
+    padding: 0 0 20px 40px;
+    font-size: 30px;
+    background-color: whitesmoke;
+}
+
+.header-text-2 {
+    padding: 0 0 60px 40px;
+    font-size: 25px;
+    background-color: whitesmoke;
+}
+
+.middle-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px 20px;
+    height: 30vh;
+}
+
+.message-form {
+    padding: 0 0 20px 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container-form {
+    display: flex;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 20px;
+    height: 25px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.error-message {
+    display: none;
+    color: red;
+}
+
+.first-column {
+    padding: 5px 20px 10px 20px;
+}
+
+.second-column {
+    padding: 5px 20px 10px 20px;
+}
+
+.footer {
+    padding: 10px 20px 10px 20px;
+    height: 35vh;
+    background-color: whitesmoke;
+}
+
+.butt-create-account {
+    padding: 20px 0 0 20px;
+}
+
+.butt-create{
+    border-radius: 5px;
+    padding: 10px 50px 10px 50px;
+}
+.link-login {
+    padding: 40px 0 0 20px;
+}
+/* ถ้าใส่เมล์ผิดให้ขึ้นกรอบสีแดง */
+input[type="email"]:invalid {
+    border: 2px solid red;
+}
+/* ปุ่มเม้าชี้เปลี่ยนเป้นสีส้ม */
+.butt-create:hover {
+    border: 5px solid orange;
+    font-size: 15px;
+    color: orange;
+}
